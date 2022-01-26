@@ -1,0 +1,10 @@
+alias: Tag LR Relax is scanned
+description: ''
+trigger:
+  - platform: tag
+    tag_id: 57d52dcc-d712-4216-b177-352048161f89
+condition: []
+action:
+  - scene: scene.living_room_relax
+mode: single
+
