@@ -1,0 +1,10 @@
+alias: Tag Office Read is scanned
+description: ''
+trigger:
+  - platform: tag
+    tag_id: e29dd9d2-21d0-4f60-abf7-237fed062c04
+condition: []
+action:
+  - scene: scene.office_read
+mode: single
+
