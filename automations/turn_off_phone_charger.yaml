@@ -1,0 +1,19 @@
+alias: Turn off phone charger
+description: ''
+trigger:
+  - above: 80
+    below: 101
+    device_id: 0bade40460214b3b91f7a531661a5d46
+    domain: sensor
+    entity_id: sensor.mi_note_10_lite_battery_level
+    platform: device
+    type: battery_level
+condition: []
+action:
+  - device_id: fc1aef35dfca459799e9ab15a448e5b7
+    domain: switch
+    entity_id: switch.smart_plug_phone_birgit
+    type: turn_off
+mode: single
+initial_state: true
+
