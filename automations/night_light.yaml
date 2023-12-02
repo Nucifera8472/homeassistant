@@ -1,0 +1,12 @@
+alias: Night light
+description: ""
+trigger:
+  - platform: time
+    at: "04:00:00"
+condition: []
+action:
+  - service: light.turn_off
+    data: {}
+    target:
+      entity_id: light.color_temperature_light_2
+mode: single
